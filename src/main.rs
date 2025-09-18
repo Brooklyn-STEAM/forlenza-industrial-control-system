@@ -144,7 +144,7 @@ impl IndustrialController {
 }
 
 fn main() {
-    println!("Forlenza Industrial Control System - Educational Demo");
+    println!("Forlenza Industrial Control System");
     println!("Checking system compatibility...\n");
     
     match IndustrialController::new() {
