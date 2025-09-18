@@ -156,20 +156,15 @@ fn main() {
                 return;
             }
             
-            println!("\nPress Enter to simulate emergency shutdown...");
+            println!("\nPress Enter to start emergency shutdown...");
             let mut input = String::new();
             std::io::stdin().read_line(&mut input).unwrap();
             
             controller.emergency_shutdown();
-            
-            println!("\nThis software demonstrates why virtualization is important");
-            println!("for preserving access to legacy industrial systems!");
         },
         Err(e) => {
             eprintln!("COMPATIBILITY ERROR:");
             eprintln!("{}", e);
-            eprintln!("\nThis demonstrates how legacy software becomes unusable on newer operating systems.");
-            eprintln!("Run this software in a Windows 7 virtual machine to see it work properly!");
             std::process::exit(1);
         }
     }
