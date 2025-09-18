@@ -1,0 +1,9 @@
+[package]
+name = "forlenza_industrial"
+version = "2.1.0"
+edition = "2025"
+
+[dependencies]
+eframe = "0.22"
+egui = "0.22"
+serde = { version = "1.0", features = ["derive"] }
